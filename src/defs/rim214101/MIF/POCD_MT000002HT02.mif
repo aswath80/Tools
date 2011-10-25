@@ -1,0 +1,302 @@
+<!--$Header: POCD_MT000002HT02.mif 120.0.12000000.1 2007/11/12 19:35:32 nitaggar noship $-->
+<mif:serializedStaticModel xmlns:mif="urn:hl7-org:v3/mif"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:schemaLocation=""
+                           packageKind="version"
+                           representationKind="serialized"
+                           isSerializable="true"
+                           isAbstract="false"
+                           name="02">
+   <mif:packageLocation root="DEFN" section="HM" subSection="PO" domain="CD" artifact="MT-deprecated"
+                        realm="HT"
+                        version="02"
+                        id="000002"/>
+   <mif:header>
+      <mif:renderingInformation schemaVersion="1" application="Visio to MIF transform"/>
+      <mif:legalese copyrightOwner="Health Level Seven" copyrightYears="2007"/>
+   </mif:header>
+   <mif:graphicRepresentation presentation="HL7">
+      <mif:graphElement name="Main">
+         <mif:position x="0.0" y="0.0"/>
+         <mif:size width="11.000" height="8.500"/>
+      </mif:graphElement>
+   </mif:graphicRepresentation>
+   <mif:derivationSupplier staticModelDerivationId="1">
+      <mif:targetStaticModel root="DEFN" artifact="RIM" version="00"/>
+   </mif:derivationSupplier>
+   <mif:derivationSupplier staticModelDerivationId="2">
+      <mif:targetStaticModel root="DEFN" section="HM" subSection="PO" domain="CD" artifact="RM-deprecated"
+                             realm="HT"
+                             version="02"
+                             id="000002"/>
+   </mif:derivationSupplier>
+   <mif:derivationSupplier staticModelDerivationId="3">
+      <mif:targetStaticModel root="DEFN" section="HM" subSection="PO" domain="CD" artifact="HD-deprecated"
+                             realm="HT"
+                             version="02"
+                             id="000002"/>
+   </mif:derivationSupplier>
+   <mif:ownedEntryPoint id="POCD_MT000002HT02" name="Clinical Document Message" isAbstract="false">
+      <mif:annotations>
+         <mif:description>
+            <mif:text>This RMIM is used to transport the Oracle-conformant CDA document.</mif:text>
+         </mif:description>
+      </mif:annotations>
+      <mif:graphicRepresentation>
+         <mif:graphElement shapeId="Sheet.378" containerDiagramName="Main">
+            <mif:position x="7.255" y="1.548"/>
+            <mif:size width="1.920" height="0.719"/>
+            <mif:anchorage connectToShapeId="Sheet.378">
+               <mif:position x="8.516" y="2.267"/>
+               <mif:graphEdge>
+                  <mif:anchor connectToShapeId="Sheet.77">
+                     <mif:position x="7.913" y="3.119"/>
+                  </mif:anchor>
+               </mif:graphEdge>
+            </mif:anchorage>
+         </mif:graphElement>
+      </mif:graphicRepresentation>
+      <mif:specializedClass>
+         <mif:class name="ClinicalDocumentMetadata" isAbstract="false">
+            <mif:derivationSupplier staticModelDerivationId="1" className="Document"/>
+            <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"/>
+            <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"/>
+            <mif:graphicRepresentation presentation="HL7">
+               <mif:graphElement shapeId="Sheet.77" containerDiagramName="Main" shapeTemplate="Act"
+                                 isWidthAutoSize="true"
+                                 isHeightAutoSize="true">
+                  <mif:position x="6.767" y="3.119"/>
+                  <mif:size width="2.865" height="1.581"/>
+               </mif:graphElement>
+            </mif:graphicRepresentation>
+            <mif:attribute name="classCode" sortKey="1" minimumMultiplicity="1" maximumMultiplicity="1"
+                           conformance="R"
+                           isMandatory="true"
+                           isStructural="true">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="classCode"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="classCode"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="classCode"/>
+               <mif:type name="CS"/>
+               <mif:supplierDomainSpecification codingStrength="CNE" codeSystemName="ActClass" mnemonic="DOCCLIN"/>
+            </mif:attribute>
+            <mif:attribute name="moodCode" sortKey="2" minimumMultiplicity="1" maximumMultiplicity="1"
+                           conformance="R"
+                           isMandatory="true"
+                           isStructural="true">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="moodCode"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="moodCode"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="moodCode"/>
+               <mif:type name="CS"/>
+               <mif:supplierDomainSpecification codingStrength="CNE" codeSystemName="ActMood" mnemonic="EVN"/>
+            </mif:attribute>
+            <mif:attribute name="id" sortKey="3" minimumMultiplicity="0" maximumMultiplicity="*"
+                           isMandatory="false"
+                           isStructural="false">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="id"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="id"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="id"/>
+               <mif:type name="SET">
+                  <supplierBindingArgumentDatatype xmlns="urn:hl7-org:v3/mif" name="II"/>
+               </mif:type>
+            </mif:attribute>
+            <mif:attribute name="text" sortKey="4" minimumMultiplicity="0" maximumMultiplicity="1"
+                           isMandatory="false"
+                           isStructural="false">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="text"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="text"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="text"/>
+               <mif:type name="ED"/>
+            </mif:attribute>
+            <mif:attribute name="statusCode" sortKey="5" minimumMultiplicity="0" maximumMultiplicity="1"
+                           isMandatory="false"
+                           isStructural="false">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="statusCode"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="statusCode"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="statusCode"/>
+               <mif:type name="CS"/>
+               <mif:supplierDomainSpecification codingStrength="CNE" domainName="ActStatus"/>
+            </mif:attribute>
+            <mif:attribute name="availabilityTime" sortKey="6" minimumMultiplicity="0"
+                           maximumMultiplicity="1"
+                           isMandatory="false"
+                           isStructural="false">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document"
+                                       attributeName="availabilityTime"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="availabilityTime"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="availabilityTime"/>
+               <mif:type name="TS"/>
+            </mif:attribute>
+            <mif:attribute name="reasonCode" sortKey="7" minimumMultiplicity="0" maximumMultiplicity="*"
+                           isMandatory="false"
+                           isStructural="false">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="reasonCode"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="reasonCode"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="reasonCode"/>
+               <mif:type name="SET">
+                  <supplierBindingArgumentDatatype xmlns="urn:hl7-org:v3/mif" name="CE"/>
+               </mif:type>
+               <mif:supplierDomainSpecification codingStrength="CWE" domainName="ActReason"/>
+            </mif:attribute>
+            <mif:attribute name="completionCode" sortKey="8" minimumMultiplicity="0"
+                           maximumMultiplicity="1"
+                           isMandatory="false"
+                           isStructural="false">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="completionCode"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="completionCode"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="completionCode"/>
+               <mif:type name="CE"/>
+               <mif:supplierDomainSpecification codingStrength="CWE" domainName="DocumentCompletion"/>
+            </mif:attribute>
+            <mif:attribute name="storageCode" sortKey="9" minimumMultiplicity="0" maximumMultiplicity="1"
+                           isMandatory="false"
+                           isStructural="false">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="storageCode"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="storageCode"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="storageCode"/>
+               <mif:type name="CE"/>
+               <mif:supplierDomainSpecification codingStrength="CWE" domainName="DocumentStorage"/>
+            </mif:attribute>
+            <mif:attribute name="copyTime" sortKey="10" minimumMultiplicity="0" maximumMultiplicity="1"
+                           isMandatory="false"
+                           isStructural="false">
+               <mif:derivationSupplier staticModelDerivationId="1" className="Document" attributeName="copyTime"/>
+               <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                       attributeName="copyTime"/>
+               <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                       attributeName="copyTime"/>
+               <mif:type name="TS"/>
+            </mif:attribute>
+            <mif:association sortKey="0">
+               <mif:graphicRepresentation>
+                  <mif:graphElement connectToShapeId="Sheet.77" containerDiagramName="Main">
+                     <mif:position x="8.200" y="4.701"/>
+                     <mif:graphEdge>
+                        <mif:anchor connectToShapeId="Sheet.908">
+                           <mif:position x="8.200" y="4.701"/>
+                        </mif:anchor>
+                     </mif:graphEdge>
+                  </mif:graphElement>
+               </mif:graphicRepresentation>
+               <mif:targetConnection name="author" minimumMultiplicity="0" maximumMultiplicity="*"
+                                     isMandatory="false"
+                                     sortKey="AEA_______">
+                  <mif:derivationSupplier staticModelDerivationId="1" className="Act" associationEndName="participation"/>
+                  <mif:derivationSupplier staticModelDerivationId="2" className="ClinicalDocumentMetadata"
+                                          associationEndName="author"/>
+                  <mif:derivationSupplier staticModelDerivationId="3" className="ClinicalDocumentMetadata"
+                                          associationEndName="author"/>
+                  <mif:participantClass>
+                     <mif:class name="Author" isAbstract="false">
+                        <mif:derivationSupplier staticModelDerivationId="1" className="Participation"/>
+                        <mif:derivationSupplier staticModelDerivationId="2" className="Author"/>
+                        <mif:derivationSupplier staticModelDerivationId="3" className="Author"/>
+                        <mif:graphicRepresentation presentation="HL7">
+                           <mif:graphElement shapeId="Sheet.908" containerDiagramName="Main" shapeTemplate="Participation"
+                                             textWrappingWidth="66.0"
+                                             nodeOrientation="Down">
+                              <mif:position x="6.851" y="4.701"/>
+                              <mif:size width="2.686" height="1.299"/>
+                           </mif:graphElement>
+                        </mif:graphicRepresentation>
+                        <mif:attribute name="typeCode" sortKey="1" minimumMultiplicity="1" maximumMultiplicity="1"
+                                       conformance="R"
+                                       isMandatory="true"
+                                       isStructural="true">
+                           <mif:derivationSupplier staticModelDerivationId="1" className="Participation" attributeName="typeCode"/>
+                           <mif:derivationSupplier staticModelDerivationId="2" className="Author" attributeName="typeCode"/>
+                           <mif:derivationSupplier staticModelDerivationId="3" className="Author" attributeName="typeCode"/>
+                           <mif:type name="CS"/>
+                           <mif:supplierDomainSpecification codingStrength="CNE" codeSystemName="ParticipationType" mnemonic="AUT"/>
+                        </mif:attribute>
+                        <mif:attribute name="functionCode" sortKey="2" minimumMultiplicity="0" maximumMultiplicity="1"
+                                       isMandatory="false"
+                                       isStructural="false">
+                           <mif:derivationSupplier staticModelDerivationId="1" className="Participation"
+                                                   attributeName="functionCode"/>
+                           <mif:derivationSupplier staticModelDerivationId="2" className="Author" attributeName="functionCode"/>
+                           <mif:derivationSupplier staticModelDerivationId="3" className="Author" attributeName="functionCode"/>
+                           <mif:type name="CE"/>
+                           <mif:supplierDomainSpecification codingStrength="CWE" domainName="ParticipationFunction"/>
+                        </mif:attribute>
+                        <mif:attribute name="time" sortKey="3" minimumMultiplicity="1" maximumMultiplicity="1"
+                                       isMandatory="false"
+                                       isStructural="false">
+                           <mif:derivationSupplier staticModelDerivationId="1" className="Participation" attributeName="time"/>
+                           <mif:derivationSupplier staticModelDerivationId="2" className="Author" attributeName="time"/>
+                           <mif:derivationSupplier staticModelDerivationId="3" className="Author" attributeName="time"/>
+                           <mif:type name="TS"/>
+                        </mif:attribute>
+                        <mif:association sortKey="2">
+                           <mif:graphicRepresentation>
+                              <mif:graphElement connectToShapeId="Sheet.908" containerDiagramName="Main">
+                                 <mif:position x="8.188" y="6.000"/>
+                                 <mif:graphEdge>
+                                    <mif:anchor connectToShapeId="Sheet.920">
+                                       <mif:position x="8.188" y="6.000"/>
+                                    </mif:anchor>
+                                 </mif:graphEdge>
+                              </mif:graphElement>
+                           </mif:graphicRepresentation>
+                           <mif:targetConnection name="assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1"
+                                                 isMandatory="false"
+                                                 sortKey="BZ">
+                              <mif:derivationSupplier staticModelDerivationId="1" className="Participation" associationEndName="role"/>
+                              <mif:derivationSupplier staticModelDerivationId="2" className="Author"
+                                                      associationEndName="assignedEntity"/>
+                              <mif:derivationSupplier staticModelDerivationId="3" className="Author"
+                                                      associationEndName="assignedEntity"/>
+                              <mif:participantClass>
+                                 <mif:commonModelElementRef name="R_AssignedEntityUniversal">
+                                    <mif:derivationSupplier staticModelDerivationId="1" className="Role"/>
+                                    <mif:derivationSupplier staticModelDerivationId="2" className="R_AssignedEntityUniversal"/>
+                                    <mif:derivationSupplier staticModelDerivationId="3" className="R_AssignedEntityUniversal"/>
+                                    <mif:supplierStructuralDomain domainName="RoleClass" mnemonic="ASSIGNED"/>
+                                    <mif:graphicRepresentation presentation="HL7">
+                                       <mif:graphElement shapeId="Sheet.920" containerDiagramName="Main" shapeTemplate="CMET"
+                                                         isWidthAutoSize="true"
+                                                         isHeightAutoSize="true">
+                                          <mif:position x="7.700" y="6.000"/>
+                                          <mif:size width="1.220" height="0.628"/>
+                                       </mif:graphElement>
+                                    </mif:graphicRepresentation>
+                                    <mif:generalizationParent name="COCT_MT090000HT02"/>
+                                 </mif:commonModelElementRef>
+                              </mif:participantClass>
+                           </mif:targetConnection>
+                           <mif:sourceConnection>
+                              <mif:nonTraversableConnection participantClassName="Author">
+                                 <mif:derivationSupplier staticModelDerivationId="1" className="Role" associationEndName="participation"/>
+                              </mif:nonTraversableConnection>
+                           </mif:sourceConnection>
+                        </mif:association>
+                     </mif:class>
+                  </mif:participantClass>
+               </mif:targetConnection>
+               <mif:sourceConnection>
+                  <mif:nonTraversableConnection participantClassName="ClinicalDocumentMetadata">
+                     <mif:derivationSupplier staticModelDerivationId="1" className="Participation" associationEndName="act"/>
+                  </mif:nonTraversableConnection>
+               </mif:sourceConnection>
+            </mif:association>
+         </mif:class>
+      </mif:specializedClass>
+   </mif:ownedEntryPoint>
+</mif:serializedStaticModel>

@@ -1,0 +1,130 @@
+<POLB_IN004202 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+   <id root="2.16.840.1.113883.3.636.5.3" extension="MSH_201110120851310046.6"/>
+   <creationTime value="201110120850"/>
+   <responseModeCode code="I"/>
+   <versionCode code="V3PR1"/>
+   <interactionId root="2.16.840.1.113883.12.76" extension="POLB_IN004202"/>
+   <processingCode code="P"/>
+   <processingModeCode code="T"/>
+   <acceptAckCode code="AL"/>
+   <receiver typeCode="RCV">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.840.1.113883.3.636.2.1" extension="RADIN"/>
+         <asAgent classCode="AGNT">
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+               <id root="2.16.840.1.113883.3.636.2.1" extension="PLW"/>
+            </representedOrganization>
+         </asAgent>
+      </device>
+   </receiver>
+   <sender typeCode="SND">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.840.1.113883.3.636.5.6" extension="RAD"/>
+         <asAgent classCode="AGNT">
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+               <id root="2.16.840.1.113883.3.636.5.6" extension="AH"/>
+            </representedOrganization>
+         </asAgent>
+      </device>
+   </sender>
+   <!--Building Control Act Process... -->
+   <controlActProcess classCode="CACT" moodCode="EVN">
+      <code code="POLB_TE004202" codeSystemName="HTB Supplemental"/>
+      <effectiveTime>
+         <low value="201110120905"/>
+      </effectiveTime>
+      <authorOrPerformer typeCode="AUT">
+         <assignedEntityDevice classCode="ASSIGNED">
+            <id root="2.16.840.1.113883.3.636.7" extension="GECE_RAD_M"/>
+            <player classCode="DEV" determinerCode="INSTANCE">
+               <id root="2.16.840.1.113883.3.636.7.1" extension="GECE_RAD_M"/>
+               <code code="GECE_RAD_M" codeSystemName="DeviceIdentifiers"/>
+            </player>
+         </assignedEntityDevice>
+      </authorOrPerformer>
+      <subject typeCode="SUBJ" contextConductionInd="false">
+         <observationEvent classCode="OBS" moodCode="EVN">
+            <id root="2.16.840.1.113883.3.636.5.6.2.1" extension="27660039_CTS0032"/>
+            <code code="CTS0032" codeSystemName="GECE_OrderCode"/>
+            <statusCode code="completed"/>
+            <effectiveTime>
+               <low value="201110112301"/>
+               <high value="201110112301"/>
+            </effectiveTime>
+            <priorityCode code="S" codeSystemName="GECE_Priority"/>
+            <value xsi:type="ST">EXAMINATION: CT4-0032 CT ABD PEL NO IV OR PO CONT Date of Service: 10/11/2011 23:01 ^ INTERPRETATION: ^ CLINICAL INDICATION: Pain. ^ COMPARISON: None. ^ TECHNIQUE: Continuous thin axial images were obtained through the abdomen and pelvis, without the administration
+               of intravenous or oral contrast material as per request. Coronal reformatted images were created. The study is limited without contrast material, except for the evaluation for renal stone or renal obstruction. ^ FINDINGS: The kidneys are normal. There is no evidence of radiodense
+               renal stone or renal obstruction.The unenhanced urinary bladder and distal ureters are within normal limits. ^ The lungs bases are clear. The unenhanced morphology of the pancreas, adrenal glands, liver and spleen are within normal limits. The gallbladder is unremarkable. ^ The bowel
+               loops are not distended or displaced. The mesentery and omentum are within normal limits. Partial visualization of normal air-filled appendix. No definite right lower quadrant inflammatory mass. There is no evidence of bulky retroperitoneal lymphadenopathy. No evidence of ascites or
+               free air. ^ The urinary bladder is unremarkable. The uterus and adnexa are unremarkable. Trace amount of free pelvic fluid, presumed physiological. The osseous structures are intact. ^ ^ ^ ^ IMPRESSION: No evidence of urolithiasis or obstructive uropathy. Normal appendix identified.
+               Trace amount free pelvic fluid, may be physiological. ^ Preliminary results were sent to the ER at 10:18 p.m. Central time on 11/20/1911 by Virtual Radiologic. ^ ^ ^ ^ Dictating Physician: TAMMY LAMB M.D. Electronically Signed: on Dictated: Oct 12 2011 8:50AM Transcribed: on Oct 12
+               2011 8:50AM ^ ^ ^
+            </value>
+            <!--Building Record Target, Patient... -->
+            <recordTarget typeCode="RCT">
+               <patient classCode="PAT">
+                  <id root="2.16.840.1.113883.3.636.5.1.2.2" extension="04249317"/>
+                  <patientPerson classCode="PSN" determinerCode="INSTANCE">
+                     <id root="2.16.840.1.113883.4.1" extension="218297474"/>
+                     <name>
+                        <family partType="FAM">COLLINS</family>
+                        <given partType="GIV">CORENNA</given>
+                        <given partType="GIV">N</given>
+                     </name>
+                  </patientPerson>
+               </patient>
+            </recordTarget>
+            <!--Building Report Author... -->
+            <author typeCode="AUT">
+               <time value="201110112301"/>
+               <employmentStaff classCode="EMP">
+                  <id root="2.16.840.1.113883.3.636.6.1.2" extension="73174"/>
+               </employmentStaff>
+            </author>
+            <!--Building Result Authors... -->
+            <author typeCode="AUT">
+               <time value="201110112301"/>
+               <assignedPerson classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.3.636.6.1.2" extension="11119"/>
+               </assignedPerson>
+            </author>
+            <!--Building Information Recipient... -->
+            <informationRecipient typeCode="IRCP" contextControlCode="OP">
+               <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.3.636.4" extension="FH"/>
+                  <code code="RADDX" codeSystemName="RoleCode"/>
+               </assignedEntity>
+            </informationRecipient>
+            <!--Building InFulfillmentOf PlacerOrder... -->
+            <inFulfillmentOf typeCode="FLFS" contextControlCode="ON" contextConductionInd="false">
+               <observationRequest classCode="OBS" moodCode="RQO">
+                  <id root="2.16.840.1.113883.3.636.5.6.2.2" extension="354753621"/>
+                  <code code="CTS0032" codeSystemName="GECE_OrderCode"/>
+                  <statusCode code="active"/>
+               </observationRequest>
+            </inFulfillmentOf>
+            <!--Building Pertinent Information... -->
+            <pertinentInformation typeCode="PERT" contextControlCode="AN" contextConductionInd="true">
+               <observationEventGeneral classCode="OBS" moodCode="EVN">
+                  <code code="EXT" codeSystemName="AdministrativeConcepts"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="ST">27660039</value>
+               </observationEventGeneral>
+            </pertinentInformation>
+            <!--Building componentOf Encounter... -->
+            <componentOf typeCode="COMP">
+               <encounterEvent classCode="ENC" moodCode="EVN">
+                  <id root="2.16.840.1.113883.3.636.5.1.2.3" extension="39503652"/>
+                  <code code="GENENC" codeSystemName="AdministrativeConcepts"/>
+                  <statusCode code="completed"/>
+                  <reference typeCode="REFR">
+                     <accountEvent classCode="ACCT" moodCode="EVN">
+                        <id root="2.16.840.1.113883.3.636.5.1.2.4" extension="39503652"/>
+                     </accountEvent>
+                  </reference>
+               </encounterEvent>
+            </componentOf>
+         </observationEvent>
+      </subject>
+   </controlActProcess>
+</POLB_IN004202>
